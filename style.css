@@ -1,0 +1,490 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  background: #eff5ef;
+}
+
+header {
+  display: flex;
+  max-height: 30px;
+  flex-direction: row;
+  margin-top: 40px;
+  margin-left: 40px;
+}
+
+.menu-icon img {
+  width: 40px;
+  max-width: 90px;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
+.menu-iconbranco img {
+  width: 40px;
+  max-width: 90px;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+  display: none;
+}
+
+.header {
+  margin: 0 auto;
+}
+
+.logo {
+  margin-right: 50px;
+  margin-top: -10px;
+}
+
+.link-header {
+  display: inline-block;
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: 600;
+  margin-right: 30px;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+  
+}
+
+.link-header:hover {
+  color: rgb(70, 193, 254);
+}
+
+.logo-anker {
+  font-size: 30px;
+  font-weight: 900;
+}
+
+@keyframes rainbow-animation {
+    to {
+        background-position: 100vh;
+    }
+}
+
+main {
+  display: flex;
+  position: relative;
+  z-index: 2;
+  justify-content: center;
+}
+
+section {
+  margin-top: 90px;
+  margin-left: 10px;
+}
+
+section h1 {
+  font-size: 80px;
+  font-weight: 800;
+  margin-bottom: 90px;
+}
+
+section p {
+  font-size: 50px;
+  font-weight: 500;
+}
+
+.soundcore {
+  display: flex;
+  margin-left: -20px;
+  text-align: center;
+  gap: 3px;
+}
+
+.soundcore .bolinha {
+  font-size: 8px;
+  margin-top: 10px;
+}
+
+#marca {
+  font-size: 23px;
+  margin-bottom: 7px;
+  margin-left: 10px;
+}
+
+.img-fone {
+  margin-top: 75px;
+  margin-left: 180px;
+  max-width: 650px;
+  transition: 0.7s ease-in-out;
+  filter: drop-shadow(10px 10px 10px #17171753);
+}
+
+.img-fone:hover {
+  transform: scale(1.061538);
+}
+
+.selo {
+  visibility: hidden;
+  position: absolute;
+  width: 30px;
+  margin-top: -75px;
+  margin-left: 310px;
+}
+
+section img{
+  width: 50px;
+  margin-top: 80px;
+  transition: 0.7s ease-in-out;
+}
+
+section img:hover {
+  width: 55px;
+  margin-top: 70px;
+}
+
+article p {
+  display: none;
+}
+
+
+.animation-fundo {
+  display: flex;
+  position: fixed;
+  z-index: 1;
+  margin-top: 150px;
+  margin-left: 500px;
+  opacity: 100%;
+}
+
+
+.img-fundo {
+  display: flex;
+  position: fixed;
+  background-size: cover;
+  z-index: 1;
+  justify-content: end;
+}
+
+.bola {
+  display: flex;
+  position: absolute;
+  z-index: -1;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  margin-top: 160px;
+  width: 100vw;
+  height:70vh;
+  background: rgb(205, 219, 224);
+  border-radius: 50% 50% 50% 50%;
+  visibility: hidden;
+}
+
+.fundo-bola {
+  display: flex;
+  position: absolute;
+  z-index: -1;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  margin-top: -px;
+  width: 100vw;
+  height: 52vh;
+  background: rgb(205, 219, 224);
+  visibility: hidden;
+}
+
+.seta {
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: 0;
+  margin-top: 20px;
+  overflow: hidden;
+}
+
+.fundo {
+  position: relative;
+  z-index: 1;
+  bottom: -118px;
+  right: -520px;
+}
+
+@media (max-width: 1400px) {
+  .img-fone {
+    max-width: 500px;
+  }
+
+  section h1 {
+    font-size: 70px;
+    font-weight: 800;
+    margin-bottom: 90px;
+  }
+
+  .seta {
+    margin-top: 100px;
+  }
+
+}
+
+@media (max-width: 1220px) {
+  .img-fone {
+    max-width: 370px;
+  }
+
+  section h1 {
+    font-size: 70px;
+    font-weight: 800;
+    margin-bottom: 90px;
+  }
+
+  section p {
+    font-size: 40px;
+  }
+
+  .seta {
+    margin-top: 140px;
+  }
+
+}
+
+@media (max-width: 1000px) {
+  .img-fone {
+    max-width: 350px;
+    margin-top: 200px;
+    margin-left: 80px;
+  }
+
+  section h1 {
+    font-size: 70px;
+    font-weight: 800;
+    margin-bottom: 90px;
+  }
+
+  section p {
+    font-size: 40px;
+  }
+
+  .seta {
+    margin-top: 140px;
+  }
+
+  .menu-icon {
+    margin-top: -10px;
+  }
+
+}
+
+@media (max-width: 900px)  {
+
+  .logo-anker {
+    font-size: 25px;
+    color:  rgb(234, 234, 234);
+
+  }
+
+  .bola {
+    visibility: visible;
+  }
+
+  .fundo-bola {
+    visibility: visible;
+  }
+
+  main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .img-fone {
+    display: flex;
+    order: 1;
+    max-width: 350px;
+    margin: 0 auto;
+    margin-right: 20px;
+    margin-top: -30px;
+    filter: drop-shadow(0px 0px 20px white);
+    filter: drop-shadow(0px 0px 20px white);
+  }
+
+  section {
+    display: flex;
+    flex-direction: column;
+  }
+
+  section img {
+    display: none;
+  }
+
+  section h1 {
+    display: flex;
+    order: 1;
+    font-size: 60px;
+    font-weight: 800;
+    margin-bottom: 90px;
+  }
+
+  .paragrafo {
+    display: none;
+  }
+
+  article {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .selo {
+    visibility: visible;
+    position: absolute;
+    width: 30px;
+    margin-top: 75px;
+    margin-left: 310px;
+  }
+
+  article p {
+    font-size: 25px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 70px;
+    margin-left: -60px;
+    text-align: center;
+  }
+
+  .link-header {
+    display: none;
+  }
+
+  .img-fundo {
+    display: none;
+  }
+
+  .header {
+    max-height: none;
+    width: 100vw;
+    height: 50px;
+  }
+
+  header {
+    background: rgb(24, 24, 24);
+    max-width: 100vw;
+    max-height: none;
+    height: 80px;
+    margin: 0 auto;
+    padding-top: 35px;
+    position: sticky;
+    top: -1px;
+    z-index: 3;
+  }
+
+  .seta {
+    margin-top: 100px;
+    margin-bottom: 50px;
+  }
+
+  .menu-iconbranco img {
+    display: initial;
+    margin-left: 35px;
+    margin-top: -10px;
+  }
+
+  .menu-icon img {
+    display: none;
+  }
+
+}
+
+@media (max-width: 400px) {
+
+  header {
+    background: rgb(24, 24, 24);
+    max-width: 100vw;
+    max-height: none;
+    height: 60px;
+    margin: 0 auto;
+    padding-top: 25px;
+  }
+
+  .menu-icon img {
+    width: 40px;
+  }
+
+  .img-fone {
+    width: 80vw;
+    margin: 0 auto;
+    margin-top: -40px;
+  }
+
+  .logo-anker{
+    font-size: 20px;
+    margin-top: 3px;
+    margin-right: -23px;
+}
+
+  section h1 {
+    font-size: 40px;
+    margin-left: -10px;
+    display: flex;
+  }
+
+  .selo {
+    visibility: visible;
+    position: absolute;
+    width: 24px;
+    margin-top: 80px;
+    margin-left: 260px;
+  }
+
+  .soundcore {
+    display: flex;
+    margin-left: -25px;
+    text-align: center;
+    gap: 3px;
+    max-width: 110px;
+    margin-top: -40px;
+  }
+
+  section {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  #marca {
+    font-size: 15px;
+    line-height: 20px;
+    margin-left: 10px;
+  }
+
+  article p {
+    font-size: 23px;
+    margin-top: 75px;
+    margin-left: -50px;
+  }
+
+  .seta {
+    margin-top: 100px;
+    margin-bottom: 50px;
+  }
+
+  .bola {
+    margin-top: 235px;
+    height: 350px;
+  }
+
+  .fundo-bola {
+    height: 60vh;
+    max-height: 410px;
+    min-height: 410px;
+  }
+
+  .menu-iconbranco img {
+    width: 30px;
+    margin: 0 auto;
+    margin-left: 25px;
+    margin-top: -7px;
+  }
+
+  .onda {
+    margin-top: -3px;
+  }
+}
